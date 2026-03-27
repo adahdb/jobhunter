@@ -13,8 +13,8 @@ async def init():
 
 async def tasks_init():
     services.scheduler.daily(
-        datetime.time(hour=00, minute=34),
-        get_and_send_daily_jobs  # no parentheses — pass the function reference
+        datetime.time(hour=00, minute=49),
+        get_and_send_daily_jobs
     )
 
 

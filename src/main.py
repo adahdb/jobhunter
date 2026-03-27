@@ -8,8 +8,11 @@ import task_scheduler
 
 async def main():
     db.init()
+    print("DB Init")
     await telegramBot.init()
+    print("TelegramBot Init")
     await task_scheduler.init()
+    print("Task Scheduler Init")
 
     while True:
         await asyncio.sleep(1)
