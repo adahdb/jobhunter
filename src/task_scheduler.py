@@ -14,7 +14,7 @@ async def init():
 
 async def tasks_init():
     services.scheduler.daily(
-        dt.time(hour=12, minute=36),
+        dt.time(hour=12, minute=00),
         get_and_send_daily_jobs
     )
 
