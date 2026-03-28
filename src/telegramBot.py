@@ -31,7 +31,7 @@ async def send_jobs(jobs):
             text=message
         )
 
-# The only handler is /start, which saves the chat_id for later use
+
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Bot is running!")
 

@@ -1,5 +1,4 @@
 import Platsbanken
-import task_scheduler
 import datetime
 
 yesterday_date = datetime.date.today() - datetime.timedelta(days=1)

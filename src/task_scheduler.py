@@ -1,7 +1,7 @@
 from scheduler.asyncio import Scheduler
 import datetime
 import Platsbanken
-import db  # import the db module so we can call its functions
+import db
 import services
 import telegramBot
 import datetime as dt
