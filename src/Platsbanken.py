@@ -6,26 +6,24 @@ base_url = "https://links.api.jobtechdev.se/joblinks"
 params = {
     "limit": 100,
     "offset": 0,
-    "published-after": "2026-03-20",
+    "published-after": "",
     "region": "CaRE_1nn_cSU",
     "occupation-field": "apaJ_2ja_LuF"
 }
 
-
-def callApi():
-    #yesterdayDate = datetime.date.today() - datetime.timedelta(days=1)
-    #params["published-after"] = yesterdayDate
+def callApi(yesterday_date):
+    params["published-after"] = yesterday_date
     response = requests.get(base_url, params=params)
     return response
 
 
-def getJobs():
+def getJobs(yesterday_date):
     all_jobs = []
     total = 0
     params["offset"] = 0
 
     while True:
-        response = callApi()
+        response = callApi(yesterday_date)
         if response.status_code == 200:
             url_data = response.json()
 
