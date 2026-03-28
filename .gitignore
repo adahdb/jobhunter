@@ -319,6 +319,6 @@ jobs.db
 identifier.sqlite
 
 # tests
-test
+src/test.py
 TODO
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm,windows
