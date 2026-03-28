@@ -34,6 +34,7 @@ async def send_jobs(jobs):
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Bot is running!")
+    print(update.message.chat.id)
 
 async def init():
     services.telegram_app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
