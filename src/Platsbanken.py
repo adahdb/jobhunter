@@ -1,5 +1,4 @@
 import requests
-import datetime
 
 
 base_url = "https://links.api.jobtechdev.se/joblinks"
